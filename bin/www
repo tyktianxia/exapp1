@@ -9,6 +9,7 @@ var debug = require("debug")("exapp1:server");
 var http = require("http");
 
 require("../schedule/index")
+require("../util/sql")
 
 /**
  * Get port from environment and store in Express.
