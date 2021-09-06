@@ -109,6 +109,7 @@
         "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view\\config\\locales",
         "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view-nunjucks\\config\\locales",
         "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-mysql\\config\\locales",
+        "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-validate\\config\\locales",
         "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\locales",
         "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\locales"
       ],
@@ -210,6 +211,7 @@
         "database": "yanzhi"
       }
     },
+    "validate": {},
     "env": "local",
     "name": "egg-example",
     "keys": "<String len: 27>",
@@ -237,6 +239,7 @@
       "dependencies": {
         "egg": "^2.30.0",
         "egg-mysql": "^3.0.0",
+        "egg-validate": "^2.0.2",
         "egg-view-nunjucks": "^2.3.0",
         "moment": "^2.29.1"
       },
@@ -352,12 +355,16 @@
       "serverUrl": "https://hacker-news.firebaseio.com/v0"
     },
     "middleware": [
-      "robot"
+      "robot",
+      "errorHandler"
     ],
     "robot": {
       "ua": [
         {}
       ]
+    },
+    "errorHandler": {
+      "match": "/api"
     },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
@@ -546,6 +553,17 @@
       "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\plugin.js",
       "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-mysql",
       "version": "3.0.0"
+    },
+    "validate": {
+      "enable": true,
+      "package": "egg-validate",
+      "name": "validate",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-validate",
+      "version": "2.0.2"
     }
   }
 }

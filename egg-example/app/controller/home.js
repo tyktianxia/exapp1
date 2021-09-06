@@ -1,6 +1,10 @@
 // app/controller/news.js
 const Controller = require("egg").Controller;
 
+// 定义创建接口的请求参数规则
+const createRule = {
+  accesstoken: 'string',
+};
 class NewsController extends Controller {
   async index() {
     this.ctx.body = "Hello world";
@@ -12,6 +16,7 @@ class NewsController extends Controller {
     await this.ctx.render("news/list.tpl", newsList);
   }
   async userList(){
+    // this.ctx.validate(createRule, this.ctx.request.body);
     const userList = await this.ctx.service.news.userList();
     this.ctx.body = userList;
   }

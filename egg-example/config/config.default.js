@@ -15,8 +15,12 @@ exports.news = {
 };
 
 // add middleware robot
-exports.middleware = ["robot"];
+exports.middleware = ["robot", "errorHandler"];
 // robot's configurations
 exports.robot = {
   ua: [/Baiduspider/i],
+};
+
+exports.errorHandler = {
+  match: '/api',
 };

@@ -8,3 +8,9 @@ exports.mysql = {
   enable: true,
   package: 'egg-mysql',
 };
+
+// config/plugin.js
+exports.validate = {
+  enable: true,
+  package: "egg-validate",
+};
