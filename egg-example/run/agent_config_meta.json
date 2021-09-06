@@ -1,0 +1,308 @@
+{
+  "keys": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.default.js",
+  "view": {
+    "defaultViewEngine": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.default.js",
+    "mapping": {
+      ".tpl": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.default.js"
+    },
+    "root": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "news": {
+    "pageSize": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.default.js",
+    "serverUrl": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.default.js"
+  },
+  "middleware": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.default.js",
+  "robot": {
+    "ua": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.default.js"
+  },
+  "mysql": {
+    "client": {
+      "host": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js",
+      "port": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js",
+      "user": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js",
+      "password": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js",
+      "database": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js"
+    },
+    "app": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js",
+    "agent": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js",
+    "default": {
+      "database": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-mysql\\config\\config.default.js",
+      "connectionLimit": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-mysql\\config\\config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
+    "logValue": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "type": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "ipExceptionList": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "allowArrayField": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+      "disable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+  },
+  "env": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "name": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "version": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "description": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "main": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "dev": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "test": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "cov": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "debug": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "keywords": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "author": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "license": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "dependencies": {
+      "egg": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "egg-mysql": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "moment": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "egg-mock": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "baseDir": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "strict": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "depth": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "env": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "level": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "logging": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "port": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+}
