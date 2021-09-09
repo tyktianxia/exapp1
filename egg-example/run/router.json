@@ -6,6 +6,32 @@
       "GET"
     ],
     "paramNames": [],
+    "path": "/passport/github",
+    "regexp": "/^\\/passport\\/github(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/passport/github/callback",
+    "regexp": "/^\\/passport\\/github\\/callback(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
     "path": "/",
     "regexp": "/^(?:\\/(?=$))?$/",
     "stack": [
@@ -90,6 +116,19 @@
     ],
     "path": "/user/list:id",
     "regexp": "/^\\/user\\/list((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/test/oauth",
+    "regexp": "/^\\/test\\/oauth(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

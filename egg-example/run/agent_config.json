@@ -77,7 +77,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -90,8 +90,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -115,7 +115,7 @@
       "fileExtensions": [],
       "whitelist": null,
       "allowArrayField": false,
-      "tmpdir": "C:\\Users\\yanzhi\\AppData\\Local\\Temp\\egg-multipart-tmp\\egg-example",
+      "tmpdir": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\egg-multipart-tmp\\egg-example",
       "cleanSchedule": {
         "cron": "0 30 4 * * *",
         "disable": false
@@ -140,14 +140,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "E:\\yanCode\\exapp1\\egg-example\\app\\public",
+      "dir": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "E:\\yanCode\\exapp1\\egg-example\\app\\view",
+      "root": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
@@ -178,6 +178,11 @@
       }
     },
     "validate": {},
+    "passportGithub": {
+      "key": "4f7d41dd2ffef81bdcf1",
+      "secret": "<String len: 40>",
+      "callbackURL": "/passport/github/callback"
+    },
     "env": "local",
     "name": "egg-example",
     "keys": "<String len: 27>",
@@ -205,18 +210,22 @@
       "dependencies": {
         "egg": "^2.30.0",
         "egg-mysql": "^3.0.0",
+        "egg-passport": "^2.1.1",
+        "egg-passport-github": "^1.0.0",
+        "egg-sequelize": "^6.0.0",
         "egg-validate": "^2.0.2",
         "egg-view-nunjucks": "^2.3.0",
-        "moment": "^2.29.1"
+        "moment": "^2.29.1",
+        "mysql2": "^2.3.0"
       },
       "devDependencies": {
         "egg-bin": "^4.16.4",
         "egg-mock": "^3.26.0"
       }
     },
-    "baseDir": "E:\\yanCode\\exapp1\\egg-example",
-    "HOME": "C:\\Users\\yanzhi",
-    "rundir": "E:\\yanCode\\exapp1\\egg-example\\run",
+    "baseDir": "E:\\yanzhiCode\\e\\exapp1\\egg-example",
+    "HOME": "C:\\Users\\lenovo",
+    "rundir": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -248,7 +257,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "E:\\yanCode\\exapp1\\egg-example\\logs\\egg-example",
+      "dir": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\logs\\egg-example",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -341,8 +350,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-onerror",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-onerror",
       "version": "2.1.0"
     },
     "session": {
@@ -352,8 +361,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-session",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-session",
       "version": "3.3.0"
     },
     "i18n": {
@@ -363,8 +372,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-i18n",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -374,8 +383,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-watcher",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-watcher",
       "version": "3.1.1"
     },
     "multipart": {
@@ -387,8 +396,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-multipart",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-multipart",
       "version": "2.13.1"
     },
     "security": {
@@ -400,8 +409,8 @@
         "session"
       ],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-security",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-security",
       "version": "2.9.0"
     },
     "development": {
@@ -415,8 +424,8 @@
       "env": [
         "local"
       ],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-development",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -428,8 +437,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-logrotator",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -439,8 +448,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-schedule",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-schedule",
       "version": "3.6.6"
     },
     "static": {
@@ -450,8 +459,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-static",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-static",
       "version": "2.2.0"
     },
     "jsonp": {
@@ -463,8 +472,8 @@
         "security"
       ],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-jsonp",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -474,8 +483,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-view",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view",
       "version": "2.1.3"
     },
     "nunjucks": {
@@ -488,8 +497,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-view-nunjucks",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-view-nunjucks",
       "version": "2.3.0"
     },
     "mysql": {
@@ -499,8 +508,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-mysql",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-mysql",
       "version": "3.0.0"
     },
     "validate": {
@@ -510,9 +519,35 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\yanCode\\exapp1\\egg-example\\config\\plugin.js",
-      "path": "E:\\yanCode\\exapp1\\egg-example\\node_modules\\egg-validate",
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-validate",
       "version": "2.0.2"
+    },
+    "passport": {
+      "enable": true,
+      "package": "egg-passport",
+      "name": "passport",
+      "dependencies": [
+        "session"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-passport",
+      "version": "2.1.1"
+    },
+    "passportGithub": {
+      "enable": true,
+      "package": "egg-passport-github",
+      "name": "passportGithub",
+      "dependencies": [
+        "passport"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\plugin.js",
+      "path": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-passport-github",
+      "version": "1.0.0"
     }
   }
 }
