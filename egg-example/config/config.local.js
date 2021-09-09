@@ -23,4 +23,5 @@ exports.mysql = {
 exports.passportGithub = {
   key: '4f7d41dd2ffef81bdcf1',
   secret: '8e3353639fdd7921ae8cdce8c8f83665787fc383',
+  // callbackURL: '/passport/github/callback',
 };

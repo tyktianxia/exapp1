@@ -38,7 +38,7 @@
   "passportGithub": {
     "key": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js",
     "secret": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js",
-    "callbackURL": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-passport-github\\config\\config.default.js"
+    "callbackURL": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\config\\config.local.js"
   },
   "session": {
     "maxAge": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
@@ -222,7 +222,8 @@
       "egg-validate": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
       "egg-view-nunjucks": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
       "moment": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
-      "mysql2": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
+      "mysql2": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "passport-local": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "egg-bin": "E:\\yanzhiCode\\e\\exapp1\\egg-example\\node_modules\\egg\\config\\config.default.js",

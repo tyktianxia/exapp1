@@ -9,6 +9,9 @@ class NewsController extends Controller {
   async index() {
     this.ctx.body = "Hello world";
   }
+  async authCallback() {
+    this.ctx.body = "Hello world authCallback";
+  }
 }
 
 module.exports = NewsController;

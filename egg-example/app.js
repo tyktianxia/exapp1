@@ -1,7 +1,7 @@
-// app.js
 module.exports = app => {
+  console.log("app start")
   app.passport.verify(async (ctx, user) => {
-    console.log("passport")
+    console.log("app verify start")
     // check user
     assert(user.provider, 'user.provider should exists');
     assert(user.id, 'user.id should exists');
