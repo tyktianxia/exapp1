@@ -6,6 +6,7 @@ class Learn extends React.Component{
     this.state={
       inputValue:0
     }
+    this.fileRef = React.createRef();
   }
   render(){
     let button;
@@ -23,6 +24,7 @@ class Learn extends React.Component{
         {button}
         {list}
         <input value={this.state.inputValue} onChange={this.handlerInput.bind(this)}></input>
+        <input type="file" ref={this.fileRef}></input>
       </div>
     )
   }
@@ -30,6 +32,7 @@ class Learn extends React.Component{
     this.setState({
       inputValue:e.target.value
     })
+    console.log(`fileName is ${this.fileRef.current.files[0].name}`)
   }
 }
 
