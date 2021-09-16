@@ -1,3 +1,4 @@
+// 仿b站h5端项目-练手-yanzhi
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
