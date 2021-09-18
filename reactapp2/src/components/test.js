@@ -17,7 +17,8 @@ function Test() {
           <Route path="/test/b">
             <p>3</p>
           </Route>
-          <Route path="/test" >
+          
+          <Route path="*">
             <p>404</p>
           </Route>
         </Switch>
