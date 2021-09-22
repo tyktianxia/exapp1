@@ -4,6 +4,9 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <input type="file" @change="fileChange" />
     <button @click="test">click</button>
+    <hr />
+    
+    <button @click="test2">upload</button>
   </div>
 </template>
 
@@ -37,7 +40,7 @@ export default {
       var arr = this.fileVal?.name.split(".");
       var suffix;
       if (arr && arr.length >= 2) {
-        suffix = arr.slice(0,arr.length-1).join('.');
+        suffix = arr.slice(0, arr.length - 1).join(".");
         var newFile = new File([this.fileVal], `${suffix}.jpeg`, {
           type: "image/jpeg",
         });
@@ -58,6 +61,18 @@ export default {
       eleLink.click();
       // 然后移除
       document.body.removeChild(eleLink);
+    },
+    test2(){
+      this.uploadFile();
+    },
+    uploadFile() {
+      const file = this.fileVal;
+      if(!file) return;
+      const type = file.type
+      const name = file.name;
+      const key = `${new Date().toString}${name}.${type}`
+      const observable = qiniu.upload(file, key, token);
+      const subscription = observable.subscribe(observer); // 上传开始
     },
   },
 };
