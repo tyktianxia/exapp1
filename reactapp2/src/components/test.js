@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 
 function Test() {
   return (
@@ -11,14 +11,16 @@ function Test() {
             renders the first one that matches the current URL. */}
         <Switch>
           {/* 重定向 */}
+          <Route path="/test" exact>
+            <Redirect to={{
+              pathname: '/test/a'
+            }} />
+          </Route>
           <Route path="/test/a">
             <p>2</p>
           </Route>
           <Route path="/test/b">
             <p>3</p>
-          </Route>
-          <Route path="/test" >
-            <p>404</p>
           </Route>
         </Switch>
       </div>
