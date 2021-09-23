@@ -76,10 +76,10 @@ export default {
         const name = file.name;
         // const type = name.substr(name.lastIndexOf('.')+1)
         const key = `${dayjs().format(
-          "YYYY/MM/DD"
+          "YYYY_MM_DD"
         )}_${dayjs().valueOf()}${name}`;
-
         const observable = qiniu.upload(data.dist, key, this.qiniuToken);
+        const _this = this;
         const observer = {
           next(res) {
             console.log(res, "next");
@@ -89,6 +89,7 @@ export default {
           },
           complete(res) {
             console.log(res, "complete");
+            _this.getImageUrlByKey(res.key)
           },
         };
         const subscription = observable.subscribe(observer); // 上传开始
@@ -115,6 +116,21 @@ export default {
         }
       });
     },
+    getImageUrlByKey(key){
+      axios({
+        method: "get",
+        url: "http://10.10.0.99:3000/qiniu/getImageUrl",
+        params:{
+          key
+        }
+      }).then((res) => {
+        if(res.data.code === '00000'){
+          console.log(res.data.image)
+        }else{
+          console.log(res.data.message)
+        }
+      });
+    }
   },
 };
 </script>
