@@ -29,8 +29,11 @@ function App() {
           <Route path="/test">
             <Test />
           </Route>
-          <Route path="/">
+          {/* <Route path="/">
             <No404 />
+          </Route> */}
+          <Route path="*">
+            <p>404</p>
           </Route>
         </Switch>
       </div>
