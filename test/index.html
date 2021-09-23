@@ -10,10 +10,16 @@
   <script>
     const imgSrc = "https://bjctpgr.stor.bj189.cn/sales-policy-test/2021%2F09%2F22%2F890198885991972864%2F1632299919646_yzRcod.jpg?image&action=format%3At_webp"; // 有效的图片地址
 
+    function test1(){
+      const promise1 = new Promise(resolve =>{
+
+      })
+      return promise1;
+    }
     // ▼第一步：将图片imgSrc转换为Base64
     function imgSrcToBase64(sImgUrl) {
       let resolveFn;
-      const thePromise = new Promise((resove) => (resolveFn = resove));
+      // const thePromise = new Promise((resove) => (resolveFn = resove));
       const oImg = Object.assign(new Image(), {
         //创建 Image 对象
         crossOrigin: "Anonymous",
@@ -30,7 +36,7 @@
         canvas = null; // 清除以释放内存
       };
       oImg.src = sImgUrl;
-      return thePromise;
+      return new Promise((resove) => (resolveFn = resove));
     }
 
     // ▼第二步：将base64 转 file对象
