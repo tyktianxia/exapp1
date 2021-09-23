@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>图片url转file对象</title>
+  </head>
+  <body></body>
+  <script>
+    const imgSrc = "https://bjctpgr.stor.bj189.cn/sales-policy-test/2021%2F09%2F22%2F890198885991972864%2F1632299919646_yzRcod.jpg?image&action=format%3At_webp"; // 有效的图片地址
+
+    // ▼第一步：将图片imgSrc转换为Base64
+    function imgSrcToBase64(sImgUrl) {
+      let resolveFn;
+      const thePromise = new Promise((resove) => (resolveFn = resove));
+      const oImg = Object.assign(new Image(), {
+        //创建 Image 对象
+        crossOrigin: "Anonymous",
+      });
+      oImg.onload = function () {
+        let canvas = Object.assign(
+          // 创建画布
+          document.createElement("canvas"),
+          { height: oImg.height, width: oImg.width }
+        );
+        canvas.getContext("2d").drawImage(oImg, 0, 0); // 把图像绘入画布
+        const sBase64 = canvas.toDataURL("image/jpeg"); // 从画布得到base64编码
+        resolveFn(sBase64); // 返回结果
+        canvas = null; // 清除以释放内存
+      };
+      oImg.src = sImgUrl;
+      return thePromise;
+    }
+
+    // ▼第二步：将base64 转 file对象
+    function base64toFile(sBase64, filename = "pic01.jpg") {
+      var arr = sBase64.split(",");
+      var mime = arr[0].match(/:(.*?);/)[1];
+      var bstr = atob(arr[1]);
+      var idx = bstr.length;
+      var u8arr = new Uint8Array(idx);
+      while (idx--) {
+        // 此处用 while 因其性能相对更高
+        u8arr[idx] = bstr.charCodeAt(idx);
+      }
+      return new File([u8arr], filename, { type: mime });
+    }
+
+    // ▼ 第三步：调用以上2个方法完成 imgSrc 转 file对象
+    function imgUrlToFileObj(sImgUrl) {
+      return new Promise(async (resove) => {
+        const base64 = await imgSrcToBase64(sImgUrl);
+        const fileObj = base64toFile(base64);
+        resove(fileObj);
+      });
+    }
+
+    // ▼测试
+    imgUrlToFileObj(imgSrc).then((fileObj) => {
+      console.log("文件对象", fileObj);
+    });
+  </script>
+</html>
