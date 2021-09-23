@@ -10,8 +10,7 @@ router.get("/", function (req, res, next) {
   var mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
   var options = {
     scope: bucket,
-    // callbackUrl: 'http://api.example.com/qiniu/upload/callback',
-    // callbackBody: '{"key":"$(key)","hash":"$(etag)","fsize":$(fsize),"bucket":"$(bucket)","name":"$(x:name)"}'
+    returnBody: '{"key":"$(key)","hash":"$(etag)","fsize":$(fsize),"bucket":"$(bucket)","name":"$(x:name)"}'
   };
   var putPolicy = new qiniu.rs.PutPolicy(options);
   var uploadToken = putPolicy.uploadToken(mac);
@@ -19,21 +18,21 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/getImageUrl", function (req, res, next) {
+  let key = req.query.key;
+  if(!key) {
+    res.send({code:'11111',message:"key is undefined"})
+  }
   var mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
   var config = new qiniu.conf.Config();
   var bucketManager = new qiniu.rs.BucketManager(mac, config);
-  let key = '2021/09/23_16323761062351631671556(1).jpg'
-  var privateBucketDomain  = "http://qzu48ocy3.hd-bkt.clouddn.com";
+  var BucketDomain = "http://qzu48ocy3.hd-bkt.clouddn.com";
   // 公开空间访问链接
-  // var publicDownloadUrl = bucketManager.publicDownloadUrl(
-  //   publicBucketDomain,
-  //   '2021/09/23_16323761062351631671556(1).jpg'
-  // );
-  
-  var deadline = parseInt(Date.now() / 1000) + 3600; // 1小时过期
-  var privateDownloadUrl = bucketManager.privateDownloadUrl(privateBucketDomain, key, deadline);
-  console.log(privateDownloadUrl);
-  res.send({ code: "00000", image: privateDownloadUrl });
+  var DownloadUrl = bucketManager.publicDownloadUrl(BucketDomain, key);
+
+  // var deadline = parseInt(Date.now() / 1000) + 3600; // 1小时过期
+  // var DownloadUrl = bucketManager.privateDownloadUrl(BucketDomain, key, deadline);
+  // console.log(DownloadUrl);
+  res.send({ code: "00000", image: DownloadUrl });
 });
 
 module.exports = router;
