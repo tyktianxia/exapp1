@@ -1,15 +1,29 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+// import Vuex from "vuex";
+import yuex from "../plugin/yuex";
+
+import common from "./modules/common";
 
 //挂载Vuex
-Vue.use(Vuex)
+Vue.use(yuex);
 
-//创建VueX对象
-const store = new Vuex.Store({
-    state: {
-        //存放的键值对就是所要管理的状态
-        name: 'helloVueX'
+const store = new yuex.Store({
+  state: {
+    age:18,
+  },
+  getters:{
+    get2age(state){
+      return state.age * 2
     }
-})
+  },
+  // modules: {
+  //   common,
+  //   books: {
+  //     state: {
+  //       bookList: [0, 1, 2, 3],
+  //     },
+  //   },
+  // },
+});
 
-export default store
+export default store;

@@ -5,10 +5,18 @@ import store from './store'
 
 import './util/vuels.js'
 
-Vue.config.productionTip = false
+// import Yuex from "./plugin/yuex"
 
-new Vue({
+Vue.config.productionTip = false
+Vue.prototype.$store = store;
+
+// Vue.use(Yuex)
+let vm = new Vue({
+  el:"#app",
   router,
   store,
   render: h => h(App),
-}).$mount('#app')
+  mounted: ()=> {console.log("main", this)}
+})
+
+export default vm;

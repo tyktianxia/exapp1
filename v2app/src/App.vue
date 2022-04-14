@@ -2,11 +2,13 @@
   <div id="app">
     <router-view></router-view>
     <p v-for="(item, index) in arrList" :key="index">{{ item }}</p>
+    <P>{{yAge}}</P>
     <button @click="fun1">click</button>
   </div>
 </template>
 
 <script>
+import vm from "@/main.js";
 export default {
   name: "App",
   data() {
@@ -42,19 +44,31 @@ export default {
       }
     },
   },
+  computed:{
+    yAge(){
+      return this.$store.getters.get2age
+    }
+  },
   created() {},
+  mounted() {
+    // console.log("this:",this)
+    // console.log("vm:",vm)
+    // console.log(vm === this)
+    // console.log(this.$store)
+    // console.log("vm.$store.state:",vm.$store.state)
+
+    // console.log(this.$yanzhi)
+
+    console.log("=============");
+    console.log(this.$store);
+  },
   methods: {
-    // d() {
-    //   this.c();
-    // },
     async c() {
       console.log("c");
     },
     async fun1() {
       this.age++;
-      // this.age++;
-      // this.a++;
-      // this.b++;
+      this.$store.state.age++
     },
   },
 };
