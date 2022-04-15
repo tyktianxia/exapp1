@@ -46,12 +46,12 @@ export default {
   },
   computed:{
     yAge(){
-      return this.$store.getters.get2age
+      return this.$store.getters.get2age;
     }
   },
   created() {},
   mounted() {
-    // console.log("this:",this)
+    console.log("this:",this)
     // console.log("vm:",vm)
     // console.log(vm === this)
     // console.log(this.$store)
@@ -67,8 +67,9 @@ export default {
       console.log("c");
     },
     async fun1() {
-      this.age++;
-      this.$store.state.age++
+      // this.age++;
+      // this.$store.state.age++
+      this.$store.dispatch("setAge", 10)
     },
   },
 };

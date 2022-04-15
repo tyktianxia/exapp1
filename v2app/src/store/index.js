@@ -13,9 +13,21 @@ const store = new yuex.Store({
   },
   getters:{
     get2age(state){
-      return state.age * 2
+      // return state.age * 2
+      console.log("index getters:get2age state",state)
+      return state.age;
     }
   },
+  mutations:{
+    addAge(state, age){
+      return state.age += age;
+    }
+  },
+  actions:{
+    setAge({commit},age){
+      commit("addAge",age)
+    }
+  }
   // modules: {
   //   common,
   //   books: {

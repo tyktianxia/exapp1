@@ -1,6 +1,7 @@
-import VueRouter from "vue-router";
-
+let _Vue;
 let install = function(Vue, options) {
+  console.log("yuex install");
+  _Vue = Vue;
   Vue.prototype.$yanzhi = "xiaonan";
   Vue.mixin({ beforeCreate: vuexInit });
   function vuexInit() {
@@ -13,44 +14,42 @@ let install = function(Vue, options) {
   }
 };
 
-// function Store(options = {}) {
-//   let { state, getters, mutation, action } = options;
-//   this.state = typeof state == "function" ? state() : state;
-//   this.getters = getters;
-//   this.mutation = mutation;
-//   this.action = action;
-
-//   this.dispatch = function(type, payload) {};
-
-//   this.commit = function(type, payload) {};
-// }
-
-// Store.commit = (state, type, payload) => {};
-
 class Store {
   constructor(options = {}) {
-    console.log("store初始化：", options);
-
-    this.myState = new VueRouter({
+    console.log("yuex 初始化", options);
+    this.myState = new _Vue({
       data() {
         return {
           state: options.state,
         };
       },
     });
+
     this.getters = {};
-    this.mutations = options.mutation;
-    this.actions = options.actions;
+
     Object.keys(options.getters).forEach((key) => {
       Object.defineProperty(this.getters, key, {
-        get: function() {
+        get: () => {
           return options.getters[key](this.state);
         },
       });
     });
+
+    let mutations = options.mutations;
+    this.commit = (type, payload) => {
+      mutations[type](this.state, payload);
+    };
+
+    let actions = options.actions;
+    this.dispatch = (type, payload) => {
+      actions[type](this, payload);
+    };
+
+    
   }
 
   get state() {
+    console.log("yuex:get state");
     return this.myState.state;
   }
 }
