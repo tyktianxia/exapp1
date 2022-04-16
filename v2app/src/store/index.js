@@ -1,13 +1,13 @@
 import Vue from "vue";
-// import Vuex from "vuex";
-import yuex from "../plugin/yuex";
+import Vuex from "vuex";
+// import yuex from "../plugin/yuex";
 
 import common from "./modules/common";
 
 //挂载Vuex
-Vue.use(yuex);
+Vue.use(Vuex);
 
-const store = new yuex.Store({
+const store = new Vuex.Store({
   state: {
     age:18,
   },
