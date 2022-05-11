@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    123
+
+    <button onclick="clicK2PushState()">click push</button>
+</body>
+
+<script>
+    window.onhashchange = (val) => {
+        console.log("onhashchange", val)
+    }
+    window.onpopstate = (val) => {
+        console.log("index onpopstate", val)
+    }
+
+    function clicK2PushState() {
+        let stateObj = {
+            foo: "bar",
+        };
+        let url = window.location.href + "233"
+        window.history.pushState(stateObj, "page 2", "http://127.0.0.1:5500/src/test/test2.html");
+    }
+
+    window.onload = (val) => {
+        console.log("onload",val,new Date())
+    }
+</script>
+
+</html>
