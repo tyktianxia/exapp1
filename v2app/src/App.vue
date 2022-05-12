@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app">发射点发
     <!-- <router-view></router-view>
     <p v-for="(item, index) in arrList" :key="index">{{ item }}</p> -->
     <!-- <P>{{yAge}}</P> -->
