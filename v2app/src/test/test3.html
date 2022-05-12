@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
-<ul>
+  <body>
     <ul>
-        <li><a href='/home'>home</a></li>
-        <li><a href='/about'>about</a></li>
+      <ul>
+        <li><a href="/home">home</a></li>
+        <li><a href="/about">about</a></li>
 
         <div id="routeView"></div>
+        <hr />
+        <button onclick="fn1()">click1</button>
+      </ul>
     </ul>
-</ul>
-</body>
-<script>
-    let routerView = routeView
-    window.addEventListener('DOMContentLoaded', onLoad)
-    window.addEventListener('popstate', ()=>{
-        console.log("fadfasdfasdf")
-        routerView.innerHTML = location.pathname
-    })
-    function onLoad () {
-        routerView.innerHTML = location.pathname
-        var linkList = document.querySelectorAll('a[href]')
-        linkList.forEach(el => el.addEventListener('click', function (e) {
-            e.preventDefault()
-            history.pushState(null, '', el.getAttribute('href'))
-            routerView.innerHTML = location.pathname
-        }))
+  </body>
+  <script>
+    let routerView = routeView;
+    window.addEventListener("DOMContentLoaded", onLoad);
+    window.addEventListener("popstate", () => {
+      console.log("popstate");
+      routerView.innerHTML = location.href;
+    });
+    function onLoad() {
+      console.log("onload ing");
+      routerView.innerHTML = location.href;
+      var linkList = document.querySelectorAll("a[href]");
+      linkList.forEach((el) =>
+        el.addEventListener("click", function(e) {
+            console.log("click a");
+          e.preventDefault();
+          push(el.getAttribute("href"));
+        })
+      );
     }
 
-</script>
+    function fn1() {
+      push(location.pathname + "?a=1b=2");
+    }
+
+    function push(path) {
+      history.pushState(null, "", path);
+      routerView.innerHTML = location.href;
+    }
+  </script>
 </html>

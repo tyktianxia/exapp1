@@ -16,7 +16,6 @@ let vm = new Vue({
   router,
   store,
   render: h => h(App),
-  mounted: ()=> {console.log("main", this)}
 })
 
 export default vm;
