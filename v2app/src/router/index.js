@@ -1,12 +1,12 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
+import VueRouter from "../plugin/vue-router.common";
 
 Vue.use(VueRouter);
 const routes = [
-  {
-    path: "/",
-    redirect: "/index",
-  },
+  // {
+  //   path: "/",
+  //   redirect: "/index",
+  // },
   {
     path: "/index",
     name: "index",

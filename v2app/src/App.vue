@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <!-- <router-view></router-view>
-    <p v-for="(item, index) in arrList" :key="index">{{ item }}</p> -->
+    123132
+    <router-view></router-view>
+    <!-- <p v-for="(item, index) in arrList" :key="index">{{ item }}</p> -->
     <!-- <P>{{yAge}}</P> -->
     <!-- <button @click="fun1">click</button> -->
   </div>
@@ -60,7 +61,8 @@ export default {
     // console.log(this.$yanzhi)
 
     console.log("=============");
-    console.log(this.$store);
+    // console.log(this.$store);
+    console.log(this.$route,"$route");
   },
   methods: {
     async c() {
