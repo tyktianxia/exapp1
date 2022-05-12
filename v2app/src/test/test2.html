@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+</head>
+
+<body>
+    <p>test2</p>
+
+    <button onclick="clicK2PushState()">click push</button>
+</body>
+<script>
+
+    window.onpopstate = (val) => {
+        console.log("test2 onpopstate", val)
+    }
+    function clicK2PushState() {
+        let stateObj = {
+            foo: "bar",
+        };
+        let url = window.location.href + "233"
+        window.history.pushState(stateObj, "page 1", "http://127.0.0.1:5500/src/test/index.html");
+    }
+</script>
+
+</html>
